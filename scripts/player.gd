@@ -33,4 +33,3 @@ func _physics_process(delta: float) -> void:
 		
 func respawn():
 	position = start_position
-	print("we have respawned")

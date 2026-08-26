@@ -49,7 +49,7 @@ position = Vector2(-8, 0)
 shape = SubResource("RectangleShape2D_e2o6t")
 
 [node name="platform2" type="StaticBody2D" parent="." unique_id=230544946]
-position = Vector2(1232, 296)
+position = Vector2(1088, 304)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="platform2" unique_id=1048687476]
@@ -99,7 +99,7 @@ position = Vector2(0, -16)
 shape = SubResource("RectangleShape2D_feb5d")
 
 [node name="portal" type="Area2D" parent="." unique_id=972299553]
-position = Vector2(1224, -376)
+position = Vector2(1088, 200)
 script = ExtResource("4_fc0e3")
 metadata/_edit_group_ = true
 
