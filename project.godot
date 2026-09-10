@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Assignement-platform game"
+config/name="Assignment-platform game"
 run/main_scene="uid://qp7iydepv0o0"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"

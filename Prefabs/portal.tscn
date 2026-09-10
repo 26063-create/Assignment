@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://by5royn3bjbkt"]
+
+[ext_resource type="Script" uid="uid://cmun485cj605n" path="res://scripts/portal.gd" id="1_umd7t"]
+[ext_resource type="Texture2D" uid="uid://cy7p6elfsp72v" path="res://Goofy ahh red guy-1.png.png" id="2_rqanf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fc0e3"]
+size = Vector2(112, 112)
+
+[node name="portal" type="Area2D" unique_id=1867785950]
+script = ExtResource("1_umd7t")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=258720938]
+position = Vector2(-8.702278e-06, -9.536743e-07)
+scale = Vector2(3.4999998, 3.5000002)
+texture = ExtResource("2_rqanf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=701365538]
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

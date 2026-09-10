@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://7y7uh4423m1n"]
+
+[ext_resource type="Script" uid="uid://c3ubxpp10k6x6" path="res://scripts/player.gd" id="1_5wxv7"]
+[ext_resource type="Texture2D" uid="uid://cy7p6elfsp72v" path="res://Goofy ahh red guy-1.png.png" id="2_y5hcb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_80nbo"]
+size = Vector2(64, 64)
+
+[node name="Player" type="CharacterBody2D" unique_id=1531651184]
+script = ExtResource("1_5wxv7")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1158518348]
+position = Vector2(7.6293945e-06, 0)
+scale = Vector2(1.9999994, 2)
+texture = ExtResource("2_y5hcb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=502480814]
+shape = SubResource("RectangleShape2D_80nbo")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=111583197]
+position_smoothing_enabled = true
